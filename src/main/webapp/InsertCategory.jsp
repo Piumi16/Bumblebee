@@ -27,7 +27,7 @@
 		<br><p>${message}</p><br>
 		<form method="post" action="CategoryController">
 			<lable for="txtCategoryName">Category Name</lable>
-			<input type="text" id="txtCategoryName" name="categoryName" class="form-control"/>
+			<input type="text" id="txtCategoryName" name="categoryName" class="form-control" Required/>
 						
 			<input type="hidden" name="type" value="add"><br/>
 			<button type="submit" class="btn btn-success">Register</button>

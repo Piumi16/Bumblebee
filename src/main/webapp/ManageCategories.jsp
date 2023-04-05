@@ -30,7 +30,7 @@
 		<h3>Update The Category</h3>
 		<form method="post" action="CategoryController">
 			<lable for="txtCategoryCode">Category Id</lable>
-			<input type="text" id="txtCategoryCode" name="category_id" class="form-control" value="${category.category_id}" />
+			<input type="text" id="txtCategoryCode" name="category_id" class="form-control" value="${category.category_id}" Required/>
 			
 			<lable for="txtCategoryName">Category Name</lable>
 			<input type="text" id="txtCategoryName" name="category_name" class="form-control" value="${category.category_name}" Required/>			

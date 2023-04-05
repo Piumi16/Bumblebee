@@ -24,13 +24,13 @@
 		<br><p>${message}</p><br>
 		<form method="post" action="product">
 			<lable for="txtProductName">Product Name</lable>
-			<input type="text" id="txtProductName" name="product_name" class="form-control"/>
+			<input type="text" id="txtProductName" name="product_name" class="form-control" Required/>
 			
 			<lable for="txtPrice">Product Price</lable>
-			<input type="number" id="txtPrice" name="product_price" class="form-control"/>
+			<input type="number" id="txtPrice" name="product_price" class="form-control" Required/>
 			
 			<lable for="txtProductbrand">Product Description</lable>
-			<input type="text" id="txtProductbrand" name="product_brand" class="form-control"/>
+			<input type="text" id="txtProductbrand" name="product_brand" class="form-control" Required/>
 			
 			<lable for="txtCategory">Product Category</lable>
 			<select id="txtCategory" name="category" class="form-control" Required/>

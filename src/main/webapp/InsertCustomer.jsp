@@ -30,22 +30,22 @@
 		<br><p>${message}</p><br>
 		<form method="post" action="customer">
 			<lable for="txtCustomerName">Customer Name</lable>
-			<input type="text" id="txtCustomerName" name="customerName" class="form-control"/>
+			<input type="text" id="txtCustomerName" name="customerName" class="form-control" Required/>
 			
 			<lable for="txtCustomerDOB">Customer Date Of Birth</lable>
-			<input type="date" id="txtCustomerDOB" name="dob" class="form-control"/>
+			<input type="date" id="txtCustomerDOB" name="dob" class="form-control" Required/>
 			
 			<lable for="txtContact">Customer Contact</lable>
-			<input type="number" id="txtContact" name="customerContact" class="form-control"/>
+			<input type="number" id="txtContact" name="customerContact" class="form-control" Required/>
 			
 			<lable for="txtCustomerMail">Customer Mail</lable>
-			<input type="text" id="txtCustomerMail" name="custMail" class="form-control"/>
+			<input type="text" id="txtCustomerMail" name="custMail" class="form-control" Required/>
 			
 			<lable for="txtCustomerUname">Customer Usernae</lable>
-			<input type="text" id="txtCustomerUname" name="custUserName" class="form-control"/>
+			<input type="text" id="txtCustomerUname" name="custUserName" class="form-control" Required/>
 			
 			<lable for="txtCustomerPw">Password</lable>
-			<input type="text" id="txtCustomerPw" name="custPassword" class="form-control"/>
+			<input type="text" id="txtCustomerPw" name="custPassword" class="form-control" Required/>
 			
 			
 			<input type="hidden" name="type" value="add"><br/>
