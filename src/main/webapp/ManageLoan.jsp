@@ -15,12 +15,7 @@
 		  <li class="nav-item">
 		    <a class="nav-link" href="AdminLandingPage.jsp" tabindex="-1" >Bumblee-Bee</a>
 		  </li>
-		  <li class="nav-item">
-		    <a class="nav-link" href="CategoryController">Store</a>
-		  </li>
-		  <li class="nav-item">
-		    <a class="nav-link" href="InsertCategory.jsp">Register Category</a>
-		  </li>		  
+		  		  
 		</ul>
 	<div class="container">
 			
