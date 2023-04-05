@@ -11,10 +11,10 @@
 <body>
 	<ul class="nav nav-tabs">
 		<li class="nav-item">
-		  <a class="nav-link active" href="index.jsp" tabindex="-1" aria-disabled="true">Bumble-Bee</a>
+		  <a class="nav-link " href="index.jsp" tabindex="-1" aria-disabled="true">Bumble-Bee</a>
 		</li>
 		<li class="nav-item">
-		   <a class="nav-link " href="AdminLogin.jsp">Admin Login</a>
+		   <a class="nav-link active" href="AdminLogin.jsp">Admin Login</a>
 		</li>
 		<li class="nav-item">
 		  <a class="nav-link" href="UserLogin.jsp">Customer Login</a>
@@ -24,13 +24,25 @@
 		</li>
 	</ul>
 	<div class="container">
+	<br><p>${message}</p><br>
 		<div class="row">
-			<div class="col-md-12 "><br><br><h1>Welcome To Bumblebee</h1> </div>
-		
+			<div class="col-md-6">
+				<form action="admin" method="post">
+				  <div class="mb-3">
+				    <label for="username" class="form-label">Username</label>
+				    <input type="text" class="form-control" id="username" name="username" aria-describedby="emailHelp"  Required>
+				  </div>
+				  <div class="mb-3">
+				    <label for="password" class="form-label">Password</label>
+				    <input type="password" class="form-control" name="password" id="password"  Required>
+				  </div>
+				  <input type="hidden" name="type" value="specific">
+				  <button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+			<div class="col-md-6"></div>
 		</div>
-	
 	</div>
-	
 	
 </body>
 </html>
