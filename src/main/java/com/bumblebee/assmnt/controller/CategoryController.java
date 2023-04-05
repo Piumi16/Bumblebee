@@ -104,7 +104,7 @@ public class CategoryController extends HttpServlet {
 
 	private void deleteCategory(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		String message = "";
-		int category_id = Integer.parseInt(request.getParameter("category_id")) ;
+		int category_id = Integer.parseInt(request.getParameter("categoryId")) ;
 		
 		try {
 			boolean result = service.deleteTheCategory(category_id);

@@ -134,7 +134,7 @@ public class ProductController extends HttpServlet {
 		String product_name = request.getParameter("product_name");
 		double product_price = Double.parseDouble(request.getParameter("product_price"));
 		String product_brand = request.getParameter("product_brand");
-		String product_category = request.getParameter("product_category");
+		String product_category = request.getParameter("category");
 		
 		Product product = new Product(product_name,product_price,product_brand,product_category);
 		

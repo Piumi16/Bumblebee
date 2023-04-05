@@ -38,7 +38,7 @@ public class categoryManager {
 	public Category getSpecificCategory(int category_id) throws ClassNotFoundException, SQLException {
 		Connection connection = getConnection();
 		
-		String query = "select * from tbl_category where categoryId=?";
+		String query = "select * from tbl_category where category_id=?";
 		PreparedStatement ps = connection.prepareStatement(query);
 		ps.setInt(1, category_id);
 		ResultSet rs = ps.executeQuery();
@@ -83,11 +83,11 @@ public class categoryManager {
 		connection.close();
 		return result>0;
 	}
-	public boolean deleteCategory(int category_id) throws ClassNotFoundException, SQLException {
+	public boolean deleteCategory(int category) throws ClassNotFoundException, SQLException {
 		Connection connection = getConnection();
 		String query = "delete from tbl_category where category_id = ?";
 		PreparedStatement ps = connection.prepareStatement(query);
-		ps.setInt(1, category_id);
+		ps.setInt(1, category);
 		int result = ps.executeUpdate();
 		ps.close();
 		connection.close();

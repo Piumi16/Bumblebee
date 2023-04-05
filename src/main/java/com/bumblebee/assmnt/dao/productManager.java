@@ -80,16 +80,16 @@ public DbConnector getDbConnector() {
 		return productList; 
 		
 	}
-	public boolean updateProduct(Product product_id) throws ClassNotFoundException, SQLException{
+	public boolean updateProduct(Product product) throws ClassNotFoundException, SQLException{
 		
 		Connection connection = getConnection(); 
-		String query = "update tbl_product set Product_name = ?, Product_price = ?, Product_brand = ?, Product_category = ? where product_id = ?"; 
+		String query = "update tbl_product set product_name = ?, product_price = ?, product_brand = ?, product_category = ? where product_id = ?"; 
 		PreparedStatement ps = connection.prepareStatement(query); 
-		ps.setString(1, product_id.getProduct_name()); 
-		ps.setDouble(2, product_id.getProduct_price()); 
-		ps.setString(1, product_id.getProduct_brand()); 
-		ps.setString(1, product_id.getProduct_category()); 
-		ps.setInt(3, product_id.getProduct_id()); 
+		ps.setString(1, product.getProduct_name()); 
+		ps.setDouble(2, product.getProduct_price()); 
+		ps.setString(3, product.getProduct_brand()); 
+		ps.setString(4, product.getProduct_category()); 
+		ps.setInt(5, product.getProduct_id()); 
 		int result = ps.executeUpdate(); 
 		ps.close(); 
 		connection.close(); 

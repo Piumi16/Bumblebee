@@ -48,7 +48,7 @@
 						
 						<td>
 							<form method="get" action="loan">
-								<input type="hidden" name="customerIdLoan" value="${customer.customer_id}">
+								<input type="hidden" name="cust_id" value="${customer.customer_id}">
 								<input type="hidden" name="type" value="specific">
 								<button type="submit" class="btn btn-primary">VIEW</button>							
 							</form>
