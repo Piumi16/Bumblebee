@@ -36,7 +36,9 @@
 			<input type="date" id="txtCustomerDOB" name="dob" class="form-control" Required/>
 			
 			<lable for="txtContact">Customer Contact</lable>
-			<input type="number" id="txtContact" name="customerContact" class="form-control" Required/>
+			<input type="number" id="txtContact" name="customerContact" class="form-control"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+       			 type = "number"
+       			 maxlength = "10" Required/>
 			
 			<lable for="txtCustomerMail">Customer Mail</lable>
 			<input type="text" id="txtCustomerMail" name="custMail" class="form-control" Required/>
